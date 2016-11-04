@@ -1,9 +1,13 @@
-<div class="product-container {custom_class}">
-  <a href="{url}">
-    <img src="{image}">
+<div class="product-container" data-id="{{id}}">
+  <a href="{{url}}">
+    <img src="{{photos.medium_half}}">
     <div class="description">
-      <div class="title">{title}</div>
-      <div class="tagline">{tagline}</div>
+      <div class="title">{{name}}</div>
+      <div class="tagline">{{tagline}}</div>
     </div>
   </a>
+  <div class="description-text">
+    <div><span class="glyphicon glyphicon-remove closer" data-toggle="modal" data-target="#myModal">&nbsp;</span></div>
+    {{{description}}}
+  </div>
 </div>
